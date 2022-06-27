@@ -22,7 +22,7 @@ public class ScheduledTasks {
     // https://stackoverflow.com/questions/30887822/spring-cron-vs-normal-cron
 
 
-    // @Scheduled(cron = "0 52 8 * * *", zone = "Asia/Jakarta")
+    // @Scheduled(cron = "0 52 8 * * *", zone = "Asia/Jakarta") // jam 8 pagi menit 52
     public void reportCurrentTime() {
         log.info("The time is now {}", dateFormat.format(currentTimeMillis()));
     }
